@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Бельская](https://up.htmlacademy.ru/htmlcss/39/user/2458565).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
+* Сайт: [Проект "Седона"](https://annastasiyabelskaya.github.io/2458565-sedona-39/).
 
 ---
 
