@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* header */
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation-link.active {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 21px;
+  text-underline-position: under;
+}
+
+.navigation-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.search-button {
+  background-image: url(../images/user-menu/search.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+}
+
+.fav-button {
+  background-image: url(../images/user-menu/favourite.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+}
+
+.navigation-button {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color:#FFFFFF;
+  background-color: #756157;
+  display: block;
+}
+
+/* main-index */
+.main-index {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.hero-container {
+  background-image: url(../images/backgrounds/index-background.jpg),
+                    url(../images/divider.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.hero-subtitle {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.hero-description {
+  text-align: center;
+}
+
+.advantages {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item-title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: underline;
+  text-decoration-color: #0000004D;
+  text-decoration-thickness: 2px;
+}
+
+.advantages-item-title.active {
+  text-decoration-color: #FFFFFF4D;
+}
+
+.advantages-container-1,
+.advantages-container-5 {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-container-2 {
+  background-color: #83B3D31F;
+}
+
+.advantages-container-3 {
+  background-color: #83B3D333;
+}
+
+.advantages-container-4 {
+  background-color: #83B3D31F;
+}
+
+.services-title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.services-description {
+  text-align: center;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item-title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.services-item-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.house-icon-container {
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/services-icons/house.svg);
+  background-repeat: no-repeat;
+}
+
+.food-icon-container {
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/services-icons/food.svg);
+  background-repeat: no-repeat;
+}
+
+.gift-icon-container {
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/services-icons/gift.svg);
+  background-repeat: no-repeat;
+}
+
+.services-container-1,
+.services-container-3 {
+  background-color: #83B3D31F;
+}
+
+.offering {
+  text-align: center;
+}
+
+.offering h2 {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.offering-button  {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  background-color: #756157;
+  width: 376px;
+  margin: 0 auto;
+}
+
+.subscription {
+  text-align: center;
+  background-image: url(../images/backgrounds/subscribe-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscription h2 {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscription-form {
+  width: 684px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.subscription-form input {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  width: 452px;
+}
+
+.submit-button {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  border-color: #82B3D3;
+  color: #FFFFFF;
+  width: 232px;
+
+}
+
+/* footer */
+.socials-list {
+  list-style: none;
+}
+
+socials-item a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.vk-link {
+  background-image: url(../images/socials/vk.svg);
+  background-repeat: no-repeat;
+}
+
+.telegram-link {
+  background-image: url(../images/socials/telegram.svg);
+  background-repeat: no-repeat;
+}
+
+.youtube-link {
+  background-image: url(../images/socials/youtube.svg);
+  background-repeat: no-repeat;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* catalog */
+
+.filter {
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  background-image: url(../images/backgrounds/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  width: 1200px;
+}
+
+.filter-title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.home {
+  background-image: url(../images/user-menu/home.svg);
+  background-repeat: no-repeat;
+}
+
+.arrow-container {
+  background-image: url(../images/user-menu/arrow.svg);
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 20px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title,
+.price-filter-title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price::placeholder {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.filter-button-active {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.filter-button {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.catalog h2,
+.variants-number {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.view-list {
+  list-style: none;
+}
+
+.tableview-button {
+  background-image: url(../images/user-menu/tableview-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.gridview-button {
+  background-image: url(../images/user-menu/gridview-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.listview-button {
+  background-image: url(../images/user-menu/listview-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.card-list {
+  list-style: none;
+}
+
+
+.card-title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color:#000000;
+}
+
+.card-item a {
+  text-decoration: none;
+}
+
+.card-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-button {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.card-button.favourite {
+  background-color: #82B3D3;
+}
+
+.card-button.active {
+  background-color: #7DB54F;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
