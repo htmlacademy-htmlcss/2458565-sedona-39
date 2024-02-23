@@ -41,7 +41,16 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -59,14 +68,16 @@ body {
 
 .navigation-logo {
   width: 140px;
-  height: 70px;
-  margin-right: 28px;
+  padding: 0 2px 0 0;
+  margin-right: 30px;
 }
 
 .navigation-list {
+  width: 440px;
+  display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
+
 }
 
 .navigation-user {
@@ -89,6 +100,39 @@ body {
   text-decoration: none;
 }
 
+.main-page-link {
+  width: 68px;
+  padding: 20px 16px;
+}
+
+.about-link {
+  width: 83px;
+  padding: 20px 16px;
+}
+
+.catalog-link {
+  width: 93px;
+  padding: 20px 16px;
+}
+
+.navigation-list .active {
+  position: relative;
+}
+
+.navigation-list .active:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  width: 100%;
+  height: 2px;
+  background-color: #756257;
+}
+
+.navigation-user {
+  display: flex;
+  width: 268px;
+}
 
 .search-button {
   background-image: url(../images/user-menu/search.svg);
@@ -134,7 +178,7 @@ body {
   width: 458px;
   padding: 51px 371px 82px;
   background: url(../images/divider.svg), url(../images/backgrounds/index-background.jpg);
-  background-color: #83B3D333;
+  background-color: #57a7dd7a;
   background-size: 100% auto, cover;
   background-position: left bottom, left top;
   background-repeat: no-repeat;
@@ -171,6 +215,16 @@ body {
   list-style: none;
 }
 
+.advantages-item-title {
+  margin: 0 auto;
+  margin-bottom: 62px;
+
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
 .advantages-wrapper {
   display: flex;
   width: 1200px;
@@ -186,7 +240,6 @@ body {
 .advantages-content {
   width: 230px;
   padding: 113px 85px;
-  background-color: #83B3D31F;
 }
 
 .advantages-wrapper .advantages-content {
@@ -194,28 +247,37 @@ body {
   padding: 102px 85px;
 }
 
-.advantages-item .focus {
+.advantages-item:nth-child(odd) {
   background-color: #83B3D333;
 }
 
-.advantages-item-title {
-  width: 175px;
-  margin: 0 auto;
-  margin-bottom: 62px;
-
-  font-family: "PT Sans Bold", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.advantages-content .active {
-  color: #FFFFFF;
+.advantages-item:nth-child(even) {
+  background-color: #83B3D31F;
 }
 
 .advantages-description {
   margin: 0;
+  position: relative;
+}
+
+.advantages-description:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 85px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.light:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 85px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .services-title {
@@ -235,6 +297,7 @@ body {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -289,10 +352,13 @@ body {
 .services-content {
   width: 230px;
   padding: 81px 85px;
+}
+
+.services-item:nth-child(odd) {
   background-color: #83B3D31F;
 }
 
-.services-item .focus {
+.services-item:nth-child(even) {
   background-color: #FFFFFF;
 }
 
@@ -331,7 +397,7 @@ body {
 
 .main-subscription {
   background-image: url(../images/backgrounds/subscribe-background.jpg);
-  background-size: cover;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
 }
 
@@ -434,7 +500,7 @@ socials-item a {
   background-image: url(../images/backgrounds/filter-background.jpg);
   background-color: #82B3D3;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto, cover;;
 }
 
 .filter-title {
@@ -648,22 +714,36 @@ socials-item a {
 }
 
 .pagination {
+  display: flex;
+  width: 400px;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
+
+}
+
+.pagination-item {
+  width: 60px;
+  margin-right: 8px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-link {
+  display: block;
+  padding: 12px 25px 13px 24px;
   font-family: "PT Sans Bold", sans-serif;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
+  border-radius: 4px;
 }
 
-.pagination-current {
+.pagination-item .light {
   color: #000000;
   background-color: #F2F2F2;
 }
