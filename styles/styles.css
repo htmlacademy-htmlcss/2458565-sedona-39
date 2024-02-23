@@ -210,12 +210,14 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .advantages-item-title {
+  width: 175px;
   margin: 0 auto;
   margin-bottom: 62px;
 
