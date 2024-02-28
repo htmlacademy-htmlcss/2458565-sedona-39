@@ -35,12 +35,9 @@
               <a class="fav-button" href="#">
                 <span class="heart visually-hidden">Избранное</span>
               </a>
-              <div class="likes-circle">
-                <span class="likes-number visually-hidden">12</span>
-              </div>
             </li>
           </ul>
-          <a class="navigation-button" type="button">Хочу сюда!</a>
+          <a class="navigation-button" href="#">Хочу сюда!</a>
         </nav>
       </header>
 
@@ -55,10 +52,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <div class="arrow-container"></div>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#" aria-current="page">Гостиницы</a>
+                <a class="breadcrumbs-link breadcrumbs-catalog href=" #" aria-current="page">Гостиницы</a>
               </li>
             </ul>
             <h2 class="visually-hidden">Список услуг с фильтрами</h2>
@@ -136,17 +130,17 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
             <ul class="view-list">
-              <li>
-                <a class="tableview-button active" href="#">
+              <li class="view-list-item">
+                <a class="tableview-button current" href="#">
                   <span class="visually-hidden">Отобразить как таблицу</span>
                 </a>
               </li>
-              <li>
+              <li class="view-list-item">
                 <a class="gridview-button" href="#">
                   <span class="visually-hidden">отобразить как плитку</span>
                 </a>
               </li>
-              <li>
+              <li class="view-list-item">
                 <a class="listview-button" href="#">
                   <span class="visually-hidden">Отобразить как список</span>
                 </a>
@@ -156,70 +150,77 @@
           <div class="catalog-content">
             <ul class="card-list">
               <li class="card-item">
-                <a class="image-link" href="#">
-                  <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Вид из расщелины на звездное небо">
-                </a>
                 <a class="hotel-link" href="#">
                   <h3 class="card-title">Amara Resort & Spa</h3>
                 </a>
                 <p class="card-description">Гостиница
                   <b class="card-price">От 4000 ₽</b>
                 </p>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button favourite" type="button">в избранное</button>
-                <br>
-                <label class="visually-hidden">Рейтинг: 8,5</label>
+                <div class="catalog-buttons">
+                  <a class="card-button" href="#">подробнее</a>
+                  <button class="card-button favourite" type="button">в избранное</button>
+                </div>
+                <span class="rating visually-hidden">Рейтинг: 8,5</span>
+                <a class="image-link" href="#">
+                  <img class="card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
+                    alt="Вид из расщелины на звездное небо">
+                </a>
               </li>
               <li class="card-item">
-                <a class="image-link" href="#">
-                  <img src="images/hotels/hotel-2.jpg" width="300" height="212"
-                    alt="Радуга после грозы над горным хребтом">
-                </a>
                 <a class="hotel-link" href="#">
                   <h3 class="card-title">Villas at Poco Diablo</h3>
                 </a>
                 <p class="card-description">Гостиница
                   <b class="card-price">От 5000 ₽</b>
                 </p>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button favourite active" type="button">в избранном</button>
-                <br>
-                <label class="visually-hidden">Рейтинг: 9,2</label>
+                <div class="catalog-buttons">
+                  <a class="card-button" href="#">подробнее</a>
+                  <button class="card-button favourite added" type="button">в избранном</button>
+                </div>
+                <span class="rating visually-hidden">Рейтинг: 9,2</span>
+                <a class="image-link" href="#">
+                  <img class="card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
+                    alt="Радуга после грозы над горным хребтом">
+                </a>
               </li>
               <li class="card-item">
-                <a class="image-link" href="#">
-                  <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Горы на фоне голубого неба">
-                </a>
                 <a class="hotel-link" href="#">
                   <h3 class="card-title">Desert Quail Inn</h3>
                 </a>
                 <p class="card-description">Гостиница
                   <b class="card-price">От 2500 ₽</b>
                 </p>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button favourite" type="button">в избранное</button>
-                <br>
-                <label class="visually-hidden">Рейтинг: 6,9</label>
+                <div class="catalog-buttons">
+                  <a class="card-button" href="#">подробнее</a>
+                  <button class="card-button favourite" type="button">в избранное</button>
+                </div>
+                <span class="rating visually-hidden">Рейтинг: 6,9</span>
+                <a class="image-link" href="#">
+                  <img class="card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
+                    alt="Горы на фоне голубого неба">
+                </a>
               </li>
               <li class="card-item">
-                <a class="image-link" href="#">
-                  <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Горы на фоне ночного неба">
-                </a>
                 <a class="hotel-link" href="#">
                   <h3 class="card-title">GreenTree Inn</h3>
                 </a>
                 <p class="card-description">Гостиница
                   <b class="card-price">От 1500 ₽</b>
                 </p>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button favourite" type="button">в избранное</button>
-                <br>
-                <label class="visually-hidden">Рейтинг: 5,0</label>
+                <div class="catalog-buttons">
+                  <a class="card-button" href="#">подробнее</a>
+                  <button class="card-button favourite" type="button">в избранное</button>
+                </div>
+                <span class="rating visually-hidden">Рейтинг: 5,0</span>
+                <a class="image-link" href="#">
+                  <img class="card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
+                    alt="Горы на фоне ночного неба">
+                </a>
               </li>
             </ul>
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link light" href="#">1</a>
+                <a class="pagination-link light" href="#" aria-current="page">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
