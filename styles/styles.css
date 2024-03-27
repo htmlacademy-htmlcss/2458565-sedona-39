@@ -469,7 +469,7 @@ body {
 /* main-index */
 .hero {
   display: block;
-  margin-top: -11px;
+  margin-top: -10px;
   padding: 51px 371px 82px;
   background-image: url(../images/divider.svg), url(../images/backgrounds/index-background.jpg);
   background-color: #82b3d3;
@@ -488,7 +488,7 @@ body {
 .hero-content {
   width: 651px;
   margin: 0 auto;
-  padding: 69px 275px 90px;
+  padding: 70px 275px 90px;
 }
 
 .hero-subtitle {
