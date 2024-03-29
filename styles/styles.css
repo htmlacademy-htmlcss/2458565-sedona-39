@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -25,6 +25,7 @@ body {
 
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
+  font-weight: 400;
   line-height: 26px;
   color: #333333;
   background-color: #f2f2f2;
@@ -54,17 +55,16 @@ body {
   overflow: hidden;
 }
 
-.view-button :hover {
-  border: 2px solid #000000;
+.view-button:hover {
+  outline: 2px solid #000000;
 }
 
 .view-button:focus {
-  border: 2px solid #68a2ca;
-  outline: none;
+  outline: 2px solid #68a2ca;
 }
 
 .view-button:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 /* buttons */
@@ -75,8 +75,9 @@ body {
   margin: 14px 0;
   padding: 8px 34px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -93,8 +94,8 @@ body {
 }
 
 .navigation-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
-  opacity: 0.3;
 }
 
 .navigation-button:not([href]) {
@@ -107,8 +108,9 @@ body {
   margin: 0 auto;
   padding: 8px 50px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
@@ -124,8 +126,8 @@ body {
 }
 
 .offering-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
-  opacity: 0.3;
 }
 
 .offering-button:disabled {
@@ -135,8 +137,9 @@ body {
 .submit-button {
   width: 232px;
   min-height: 52px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
@@ -152,8 +155,8 @@ body {
 }
 
 .submit-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
-  opacity: 0.3;
 }
 
 .submit-button:disabled {
@@ -161,19 +164,21 @@ body {
 }
 
 .filter-button {
+  align-self: center;
   width: 191px;
   min-height: 36px;
   margin: 0;
   padding: 8px 50px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: transparent;
-  border: 3px solid transparent ;
+  border: none;
+  outline: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -193,8 +198,7 @@ body {
 
 .filter-button:active {
   background-color: #82b3d3;
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-button:disabled {
@@ -212,11 +216,11 @@ body {
 
 .filter-button.light:focus,
 .filter-button.dark:focus {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .filter-button.dark:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-button.dark:disabled {
@@ -227,8 +231,9 @@ body {
   max-width: 140px;
   min-height: 36px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
@@ -244,8 +249,8 @@ body {
 }
 
 .more:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
-  opacity: 0.3;
 }
 
 .more:not([href]) {
@@ -264,8 +269,8 @@ body {
 }
 
 .card-button.favourite:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
-  opacity: 0.3;
 }
 
 .card-button.favourite:disabled {
@@ -282,8 +287,8 @@ body {
 }
 
 .favourite.added:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #7db54f;
-  opacity: 0.3;
 }
 
 .favourite.added:disabled {
@@ -303,8 +308,7 @@ body {
 
 .functional-button:hover,
 .functional-button:focus {
-  border: 3px solid #82B3D3;
-  outline: none;
+  outline: 3px solid #82B3D3;
 }
 
 .button-minus {
@@ -367,8 +371,9 @@ body {
 .navigation-link {
   display: block;
   padding: 20px 16px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 24px;
   color: inherit;
   text-decoration: none;
@@ -379,7 +384,12 @@ body {
   color: #756257;
 }
 
-.navigation-link:focus {
+.navigation-link:focus-visible {
+  color: #756257;
+  outline: 3px solid #756157;
+}
+
+.navigation-user-item .navigation-link:focus-visible {
   color: #756257;
   outline: none;
 }
@@ -390,7 +400,7 @@ body {
 
 .active::after {
   position: relative;
-  top: 18px;
+  top: 20px;
   display: block;
   content: "";
   width: 100%;
@@ -421,7 +431,7 @@ body {
 
 .navigation-icon {
   position: absolute;
-  top: 16px;
+  top: 18px;
   left: 11px;
   width: 20px;
   height: 20px;
@@ -433,9 +443,11 @@ body {
   fill: #756157;
 }
 
-.navigation-icon:focus {
+.navigation-icon:focus-visible {
+  outline: 2px solid #756157;
   fill: #756157;
-  outline: none;
+  outline-offset: 1px;
+  border-radius: 4px;
 }
 
 .navigation-icon:active {
@@ -446,8 +458,8 @@ body {
 .circle {
   position: absolute;
   content: "";
-  top: 6px;
-  left: 18px;
+  top: 8px;
+  left: 50%;
   min-width: 20px;
   height: 20px;
   background-color: #7db54f;
@@ -460,6 +472,7 @@ body {
   padding: 5px;
   font-family: "PT Sans", sans-serif;
   font-size: 10px;
+  font-weight: 400;
   line-height: 8px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -467,12 +480,16 @@ body {
 }
 
 /* main-index */
+.main-container {
+  min-height: 100vh;
+}
+
 .hero {
   display: block;
   margin-top: -10px;
   padding: 51px 371px 82px;
   background-image: url(../images/divider.svg), url(../images/backgrounds/index-background.jpg);
-  background-color: #82b3d3;
+  background-color: rgba(131, 179, 211, 0.5);
   background-size: 100% auto, cover;
   background-position: left bottom, left top;
   background-repeat: no-repeat;
@@ -486,17 +503,17 @@ body {
 }
 
 .hero-content {
-  width: 651px;
+  width: 655px;
   margin: 0 auto;
-  padding: 70px 275px 90px;
+  padding: 69px 274px;
 }
 
 .hero-subtitle {
-  margin: 0 auto;
   margin-top: 0;
   margin-bottom: 25px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
@@ -505,6 +522,8 @@ body {
 
 .hero-description {
   margin-top: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -523,11 +542,12 @@ body {
 
 .advantages-item-title {
   position: relative;
-  width: 172px;
-  margin: 0 auto;
+  min-width: 172px;
+  margin: 0 27px;
   margin-bottom: 62px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
+  font-weight: 700;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -556,7 +576,7 @@ body {
 
 .advantages-content {
   width: 230px;
-  padding: 113px 85px;
+  padding: 112px 85px;
 }
 
 .advantages-wrapper-content {
@@ -580,8 +600,8 @@ body {
 }
 
 .advantages-image {
-  max-width: 100%;
-  height: 100%;
+  max-width: 800px;
+  min-height: 100%;
   object-fit: cover;
 }
 
@@ -597,8 +617,9 @@ body {
 .services-title {
   margin: 0;
   margin-bottom: 20px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
@@ -632,8 +653,9 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 73px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
+  font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
@@ -693,8 +715,9 @@ body {
 .offering h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
@@ -717,6 +740,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
   color: #ffffff;
+  background-color: rgba(131, 179, 211, 0.5);
 }
 
 .subscription-container {
@@ -727,8 +751,9 @@ body {
 .subscription h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
@@ -738,6 +763,7 @@ body {
   margin-bottom: 54px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
+  font-weight: 400;
   line-height: 26px;
   text-align: center;
 }
@@ -821,7 +847,7 @@ body {
 .phone {
   display: flex;
   flex-wrap: wrap;
-  max-width: 331px;
+  min-width: 331px;
   padding-right: 193px;
   padding-left: 193px;
   font-size: 40px;
@@ -862,12 +888,13 @@ body {
 
 .filter {
   width: 1060px;
-  margin-top: -12px;
+  min-height: 307px;
+  margin-top: -10px;
   padding: 35px 70px 70px;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-  background-color: #82b3d3;
+  background-color: rgba(131, 179, 211, 0.5);
   background-image: url(../images/backgrounds/filter-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -880,8 +907,9 @@ body {
 .filter-title {
   margin: 0;
   margin-bottom: 8px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 60px;
+  font-weight: 700;
   line-height: 78px;
 }
 
@@ -912,9 +940,11 @@ body {
   opacity: 0.6;
 }
 
-.breadcrumbs-link.home:focus {
-  outline: none;
+.breadcrumbs-link:focus {
   color: #ffffff;
+  outline: 3px solid #756157;
+  outline-offset: 3px;
+  border: 4px;
 }
 
 .breadcrumbs-link.home:active {
@@ -968,8 +998,9 @@ body {
 .price-filter-title {
   margin: 0;
   margin-bottom: 32px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 24px;
 }
 
@@ -1007,6 +1038,7 @@ body {
 /* label */
 .control-label {
   font-family: "PT Sans", sans-serif;
+  font-weight: 400;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1026,8 +1058,7 @@ body {
 
 .control-input:focus + .control-mark {
   box-sizing: border-box;
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
 }
 
 .control-input:active + .control-mark  {
@@ -1061,7 +1092,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
-  margin-bottom: 42px;
   cursor: pointer;
 }
 
@@ -1078,10 +1108,13 @@ body {
 .range-label .price {
   width: 143px;
   min-height: 48px;
+  margin-top: 0;
+  margin-bottom: 32px;
   padding: 12px 20px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
   text-align: left;
   background-color: #f2f2f2;
@@ -1093,10 +1126,14 @@ body {
   color: #000000;
 }
 
-.price::-webkit-inner-spin-button,
-.price::-webkit-outer-spin-button {
+.range-label .price::-webkit-inner-spin-button,
+.range-label .price::-webkit-outer-spin-button {
   padding-right: 25px;
   appearance: none;
+}
+
+.price {
+  -moz-appearance: textfield;
 }
 
 .price:hover {
@@ -1107,8 +1144,7 @@ body {
 .price:focus {
   box-sizing: border-box;
   background-color: rgba(230, 230, 230, 1);
-  border: 3px solid rgba(131, 179, 211, 1);
-  outline: none;
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .price-min {
@@ -1117,6 +1153,13 @@ body {
 
 .price-max {
   border-radius: 0 4px 4px 0;
+}
+
+.range-scale {
+  position: relative;
+  top: 12px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-start {
@@ -1135,18 +1178,6 @@ body {
   right: 20px;
   padding: 12px 0;
   opacity: 0.6;
-}
-
-.range-wrapper .input::-webkit-outer-spin-button,
-.range-wrapper .input::-webkit-inner-spin-button {
-  margin: 0;
-  appearance: none;
-}
-
-.range-scale {
-  position: relative;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
@@ -1183,18 +1214,19 @@ body {
 
 .range-toggle:active,
 .range.toggle:focus {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  outline: none;
 }
 
 .buttons-container {
   display: grid;
-  gap: 27px;
+  gap: 32px;
+  align-items: center;
   width: 194px;
   margin-top: 56px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   text-align: center;
 }
@@ -1217,8 +1249,9 @@ body {
   margin: 0;
   margin-right: auto;
   padding: 7px 0;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
@@ -1233,30 +1266,31 @@ body {
 
 .select-control {
   width: 100%;
-  padding: 12px 33px 12px 20px;
+  padding: 12px 33px 12px 16px;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
   border-radius: 4px;
   background-image: url(../images/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
   appearance: none;
   cursor: pointer;
+  -moz-appearance: textfield;
 }
 
 .select-control:hover,
 .select-control:focus {
-  border: 2px solid #68a2ca;
-  outline: none;
+  outline: 2px solid #68a2ca;
 }
 
 .select-control:disabled {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   opacity: 0.3;
 }
 
@@ -1279,7 +1313,7 @@ body {
   width: 20px;
   height: 15px;
   padding: 14px 12px;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
   border-radius: 4px
 }
 
@@ -1333,15 +1367,12 @@ body {
 
 .card-title {
   margin: 0;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
+  font-weight: 700;
   line-height: 28px;
   text-align: left;
   color: #000000;
-}
-
-.image-link {
-  order: -1;
 }
 
 .card-image {
@@ -1357,6 +1388,7 @@ body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 21px;
 }
 
@@ -1384,18 +1416,19 @@ body {
 .rating {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .rating-description {
   align-self: center;
-  justify-self: center;
   width: 140px;
   min-height: 36px;
-  margin-left: auto;
+  margin-left: 16px;
   padding: 8px 22px;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -1410,22 +1443,19 @@ body {
   height: 18px;
   background-image: url(../images/rating.svg);
   background-repeat: space;
-  background-size: 17px 18px;
+  background-size: 18px 18px;
 }
 
 .rating .four-stars {
-  display: block;
-  width: 84px;
+  width: 89px;
 }
 
 .rating .three-stars {
-  display: block;
-  width: 67px;
+  width: 68px;
 }
 
 .rating .two-stars {
-  display: block;
-  width: 48px;
+  width: 42px;
 }
 
 .pagination {
@@ -1459,8 +1489,9 @@ body {
   min-height: 60px;
   padding: 11px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
   text-decoration: none;
   color: #ffffff;
@@ -1468,25 +1499,24 @@ body {
   border-radius: 4px;
 }
 
-.pagination-item:first-of-type .light {
-  cursor: default;
-}
-
 .pagination-item .light {
   color: #000000;
+  background-color: transparent;
+}
+
+.pagination-item:first-of-type .light {
+  cursor: default;
   background-color: #f2f2f2;
 }
 
 .pagination-link:hover:not(.light),
 .pagination-link:focus:not(.light) {
   background-color: #68a2ca;
-  border: 1px solid #82b3d3;
-  outline: none;
+  outline: 1px solid #82b3d3;
 }
 
 .pagination-link:active:not(first-of-type) {
-  color: #ffffff;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
 
@@ -1534,8 +1564,7 @@ body {
 }
 
 .modal-close-button:focus {
-  border: 3px solid rgba(130, 179, 211, 1);
-  outline: none;
+  outline: 3px solid rgba(130, 179, 211, 1);
 }
 
 .modal-close-button:active {
@@ -1547,8 +1576,9 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
@@ -1563,8 +1593,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 24px;
   color: inherit;
 }
@@ -1576,8 +1607,9 @@ body {
   margin-left: auto;
   margin-bottom: 4px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
   color: #000000;
   background-color: #f2f2f2;
@@ -1608,6 +1640,7 @@ body {
   padding: 0 20px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 21px;
   color: inherit;
 }
@@ -1650,8 +1683,9 @@ body {
   min-height: 48px;
   padding: 0;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 20px;
   text-align: center;
   color: #000000;
@@ -1659,6 +1693,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  -moz-appearance: textfield;
 }
 
 .number-input::-webkit-inner-spin-button,
@@ -1677,8 +1712,7 @@ body {
 .modal-field input:focus,
 .number-input:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
-  outline: none;
+  outline: 3px solid #83b3d3;
 }
 
 .amount-buttons .number-input::placeholder {
@@ -1734,8 +1768,9 @@ body {
   margin-bottom: 4px;
   padding: 18px;
   box-sizing: border-box;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
@@ -1754,8 +1789,8 @@ body {
 }
 
 .modal-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
-  opacity: 0.3;
 }
 
 .modal-button:disabled {
@@ -1802,6 +1837,7 @@ body {
   padding: 18px 18px 18px 22px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   color: #FFFFFF;
   background-color: #333333;
