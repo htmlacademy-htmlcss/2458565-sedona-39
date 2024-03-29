@@ -55,7 +55,7 @@ body {
   overflow: hidden;
 }
 
-.view-button:hover {
+.view-button:hover:not(.tableview-button) {
   outline: 2px solid #000000;
 }
 
@@ -90,7 +90,6 @@ body {
 .navigation-button:hover,
 .navigation-button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .navigation-button:active {
@@ -431,12 +430,19 @@ body {
 
 .navigation-icon {
   position: absolute;
-  top: 18px;
   left: 11px;
   width: 20px;
   height: 20px;
   margin: auto;
   fill: #000000;
+}
+
+.search-icon {
+  top: 18px;
+}
+
+.selected-icon {
+  top: 20px;
 }
 
 .navigation-icon:hover {
@@ -458,8 +464,8 @@ body {
 .circle {
   position: absolute;
   content: "";
-  top: 8px;
-  left: 50%;
+  top: 6px;
+  left: 17px;
   min-width: 20px;
   height: 20px;
   background-color: #7db54f;
@@ -1145,6 +1151,7 @@ body {
   box-sizing: border-box;
   background-color: rgba(230, 230, 230, 1);
   outline: 3px solid rgba(131, 179, 211, 1);
+  outline-offset: -3px;
 }
 
 .price-min {
@@ -1287,10 +1294,12 @@ body {
 .select-control:hover,
 .select-control:focus {
   outline: 2px solid #68a2ca;
+  outline-offset: -2px;
 }
 
 .select-control:disabled {
   outline: 2px solid #000000;
+  outline-offset: -2px;
   opacity: 0.3;
 }
 
@@ -1306,6 +1315,7 @@ body {
 
 .view-list-item {
   width: 48px;
+  min-height: 50px;
 }
 
 .view-list-item a {
@@ -1318,7 +1328,7 @@ body {
 }
 
 .view-list-item .current {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .tableview-button {
@@ -1513,6 +1523,7 @@ body {
 .pagination-link:focus:not(.light) {
   background-color: #68a2ca;
   outline: 1px solid #82b3d3;
+  outline-offset: -1px;
 }
 
 .pagination-link:active:not(first-of-type) {
@@ -1565,6 +1576,7 @@ body {
 
 .modal-close-button:focus {
   outline: 3px solid rgba(130, 179, 211, 1);
+  outline-offset: -3px;
 }
 
 .modal-close-button:active {
@@ -1713,6 +1725,7 @@ body {
 .number-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+  outline-offset: -3px;
 }
 
 .amount-buttons .number-input::placeholder {
