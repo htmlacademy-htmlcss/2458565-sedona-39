@@ -308,6 +308,7 @@ body {
 .functional-button:hover,
 .functional-button:focus {
   outline: 3px solid #82B3D3;
+  outline-offset: -3px;
 }
 
 .button-minus {
