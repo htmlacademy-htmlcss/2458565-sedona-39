@@ -19,9 +19,9 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   min-width: 1280px;
-  min-height: 100%;
+  height: 100%;
 
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -35,6 +35,7 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   width: 1200px;
   margin: 0 auto;
   color: inherit;
@@ -151,6 +152,7 @@ body {
 .submit-button:hover,
 .submit-button:focus {
   background-color: #68a2ca;
+  outline-offset: -3px;
 }
 
 .submit-button:active {
@@ -329,6 +331,8 @@ body {
 
 /* header */
 .page-header {
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 1200px;
   min-height: 64px;
   margin: 0 auto;
@@ -386,12 +390,6 @@ body {
 
 .navigation-link:focus-visible {
   color: #756257;
-  outline: 3px solid #756157;
-}
-
-.navigation-user-item .navigation-link:focus-visible {
-  color: #756257;
-  outline: none;
 }
 
 .navigation-link:active {
@@ -450,11 +448,8 @@ body {
   fill: #756157;
 }
 
-.navigation-icon:focus-visible {
-  outline: 2px solid #756157;
-  fill: #756157;
-  outline-offset: 1px;
-  border-radius: 4px;
+.navigation-link:focus .navigation-icon {
+  fill: #756257;
 }
 
 .navigation-icon:active {
@@ -488,7 +483,7 @@ body {
 
 /* main-index */
 .main-container {
-  min-height: 100vh;
+  flex-grow: 1;
 }
 
 .hero {
@@ -798,6 +793,8 @@ body {
 
 /* footer */
 .page-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -832,11 +829,15 @@ body {
 }
 
 .footer-link svg {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .footer-link:hover svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
+}
+
+.footer-link:focus svg {
+  fill: #68a2ca;
 }
 
 .footer-link:active svg {
@@ -900,7 +901,7 @@ body {
   padding: 35px 70px 70px;
   font-size: 18px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: rgba(131, 179, 211, 0.5);
   background-image: url(../images/backgrounds/filter-background.jpg);
   background-repeat: no-repeat;
@@ -1287,9 +1288,13 @@ body {
   background-image: url(../images/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
-  appearance: none;
   cursor: pointer;
-  -moz-appearance: textfield;
+}
+
+.select-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .select-control:hover,
