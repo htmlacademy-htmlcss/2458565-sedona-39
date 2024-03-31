@@ -58,14 +58,17 @@ body {
 
 .view-button:hover:not(.tableview-button) {
   outline: 2px solid #000000;
+  outline-offset: 0;
 }
 
-.view-button:focus {
+.view-button:focus-visible {
   outline: 2px solid #68a2ca;
+  outline-offset: 0;
 }
 
 .view-button:active {
   outline: 2px solid #000000;
+  outline-offset: 0;
 }
 
 /* buttons */
@@ -558,7 +561,7 @@ body {
 .advantages-item-title::after {
   position: absolute;
   content: "";
-  top: 150%;
+  top: 151%;
   left: 57px;
   width: 60px;
   height: 2px;
@@ -598,7 +601,11 @@ body {
 }
 
 .advantages-description {
+  width: 230px;
+  min-height: 42px;
   margin: 0;
+  padding: 0;
+  word-spacing: -0.4px;
 }
 
 .advantages-image {
@@ -1049,7 +1056,7 @@ body {
   font-weight: 400;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked+.control-mark::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -1064,27 +1071,27 @@ body {
   opacity: 0.6;
 }
 
-.control-input:focus + .control-mark {
+.control-input:focus+.control-mark {
   box-sizing: border-box;
   outline: 3px solid #83B3D3;
 }
 
-.control-input:active + .control-mark  {
+.control-input:active+.control-mark {
   opacity: 0.3;
 }
 
-.control-input:disabled + .control-mark,
-.control-input:disabled + .control-mark + .control-label {
+.control-input:disabled+.control-mark,
+.control-input:disabled+.control-mark+.control-label {
   opacity: 0.2;
-   cursor: default;
+  cursor: default;
 }
 
 /* radio */
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]+.control-mark {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked+.control-mark::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -1284,6 +1291,8 @@ body {
   color: #333333;
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
+  outline-offset: 0;
+  border: none;
   border-radius: 4px;
   background-image: url(../images/select-arrow.svg);
   background-repeat: no-repeat;
@@ -1452,7 +1461,7 @@ body {
   border-radius: 4px;
 }
 
- .stars {
+.stars {
   display: flex;
   justify-content: space-between;
   align-self: center;
@@ -1537,6 +1546,7 @@ body {
   background-color: #82b3d3;
 }
 
+/* modal-window */
 .modal-container {
   position: fixed;
   display: flex;
@@ -1569,10 +1579,6 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  outline: none;
-  background-image: url(../images/modal-window/modal-close-cross.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -1580,15 +1586,13 @@ body {
   background-color: rgba(230, 230, 230, 1);
 }
 
-.modal-close-button:focus {
-  outline: 3px solid rgba(130, 179, 211, 1);
-  outline-offset: -3px;
+.modal-close-button:active .close-cross {
+  background-color: rgba(230, 230, 230, 1);
+  fill: rgba(0, 0, 0, 0.3);
 }
 
-.modal-close-button:active {
-  background-color: rgba(230, 230, 230, 1);
-  border: none;
-  opacity: 0.3;
+.modal-close-button:focus {
+  outline: 3px solid rgba(130, 179, 211, 1);
 }
 
 .modal-title {
@@ -1804,7 +1808,6 @@ body {
 .modal-button:hover,
 .modal-button:focus {
   background-color: #68a2ca;
-  outline: none;
 }
 
 .modal-button:active {
@@ -1865,11 +1868,11 @@ body {
   z-index: 1;
 }
 
-.tooltip-toggle:hover + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text {
   display: block;
 }
 
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
 
